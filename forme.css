@@ -1,0 +1,79 @@
+
+/* Fichier css permettant de définir la mise en forme commune pour l'ensemble de nos pages html
+En séparant fond et forme, on facilite ensuite la mise à jour de notre travail */
+
+/* Définition du style de la balise <a> servant pour insérer des hyperliens */
+a {
+	text-decoration: none; /* aucune mise en forme selon que le lien a été cliqué ou non */
+	color:  #BA55D3; /* définition de la couleur du texte - violet */
+}
+
+/* Définition du style du menu de navigation placé en tête de page */
+#menu{ /* général */
+	border-bottom: 2px solid #BA55D3; /* Sous le menu, bordure en bas, continue, épaisseur = 2 pixels, couleur = violet */
+	}
+
+#menu li{ /* 1ère ligne du menu de navigation */
+	display: inline-block; /* éléments sur la même ligne horizontale */
+	vertical-align: center; /* alignement vertical : centré */
+	position: relative; /* pour que les éléments gardent leur position mais puissent aussi être décalés, la position absolue s'y réfère */
+	}
+	
+#menu li a{ /* Style des hyperliens présents dans le menu de navigation*/
+	display: inline-block; /* éléments sur la même ligne horizontale */
+	padding: 10px; /* espace entre 2 éléments du menu : 10 pixels */
+	}
+	
+#menu li a:hover{/* Effet quand la souris survole (hover) les hyperliens du menu, création d'un effet */
+	background-color: #BA55D3; /* changement de la couleur de fond : elle devient violet */
+	color: #fff; /* changement de la couleur du texte, il devient blanc */
+	}
+	
+#menu li:hover .sous{ /* Effet quand la souris survole (hover) un élément du menu de navigation, déroulement de la liste des sous-éléments */
+	display : block ;
+	}
+	
+.sous { /* Style des sous éléments du menu */
+	display: none; /*ils sont cachés tant qu'il n'y a pas de survol */
+	position: absolute;
+	background-color: #BA55D3; /* couleur de fond = violet */
+}	
+.sous li a { /* Affichage des hyperliens présents dans les sous-éléments */
+	color: #fff /* couleur du texte = blanc */
+}
+
+/* Définition des styles des différents titres et texte des pages html */
+h1 { /* titre de niveau 1*/
+	text-align: center;
+}
+
+h2{  /* titre de niveau 2*/
+	color: #370028; /* couleur du texte = violet très foncé */
+	margin-left: 20px; /* mise en retrait à gauche par rapport au bord de la page de 20 pixels */
+	font-family: cursive; 
+}
+
+/* Définition du style de la ligne de séparation entre deux parties importantes d'une page html */
+hr {
+	border-bottom: 2px solid #BA55D3; /* bordure en bas, continue, épaisseur = 2 pixels, couleur = violet */
+}
+
+/* le style des paragraphes <p> n'ayant pas fait l'objet de définition, il est défini par défaut par le navigateur*/
+
+/* Définition du style des tableaux et de leur ligne */
+table, th, td {
+  border: hidden; /* absence de dessin des bordures dans les tableaux */
+}
+
+/* Définition de l'affichage des objets appelés "porte" dans la page html des portes logiques */
+.porte{ /* définition de la taille de l'image en pourcentage de la taille de la fenêtre ouverte dans le navigateur */
+	width: 40%; 
+}
+
+/* Définition de l'affichage des objets appelés "femme", relatifs aux portraits de femme dans la page html les femmes dans l'informatiques */
+.femme{ /* définition de la taille de l'image, du style de la bordure (forme, couleur, épaisseur, style) */
+	width: 214px;
+	height: 272px;
+	border-radius: 107px/ 136px; 
+	border: 6px solid #811453;
+}

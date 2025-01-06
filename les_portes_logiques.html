@@ -1,0 +1,175 @@
+<!-- Fichier de type HTML -->
+<!DOCTYPE html>
+
+<!-- Balise obligatoire en début de fichier HTML - précision de la langue utilisée FRANCAIS -->
+<html lang="fr">
+
+<!-- En tête du fichier -->
+<head>
+	<!-- Titre noté dans l'onglet du navigateur -->
+	<title>Les portes logiques</title>
+	<!-- Lien avec le fichier css de mise en forme choisi -->
+	<link href="forme.css" rel="stylesheet"></link>
+</head>
+
+<!-- Corps de la page - Contenu visible dans la page -->
+<body>
+	<!-- Mise en place du menu de navigation du site - Accès aux différentes pages avec parfois des menus déroulants -->
+	<ul id="menu">
+		<li>
+			<a href="page_d'accueil.html" >Accueil</a>	
+		</li>
+		
+		<li>
+			<a href="les_femmes_et_l_informatique.html">Les grandes femmes dans l'informatique</a>
+				<ul class="sous">
+					<li><a href="les_femmes_et_l_informatique.html#ada_lovelace">Ada Lovelace</a></li>
+					<li><a href="les_femmes_et_l_informatique.html#grace_hopper">Grace Hopper</a></li>
+					<li><a href="les_femmes_et_l_informatique.html#hedy_lamarr">Hedy Lamarr</a></li>
+					<li><a href="les_femmes_et_l_informatique.html#alice_recoque">Alice Recoque</a></li>
+					<li><a href="les_femmes_et_l_informatique.html#roberta_williams">Roberta Williams</a></li>
+				</ul>
+		</li>
+		
+		<li>
+			<a href="les_portes_logiques.html" >Les portes logiques</a>
+				<ul class="sous">
+					<li><a href="les_portes_logiques.html#and">La porte AND</a></li>
+					<li><a href="les_portes_logiques.html#or">La porte OR</a></li>
+					<li><a href="les_portes_logiques.html#xor">La porte XOR</a></li>
+					<li><a href="les_portes_logiques.html#not">La porte NOT</a></li>
+					<li><a href="les_portes_logiques.html#nand">La porte NAND</a></li>
+					<li><a href="les_portes_logiques.html#nor">La porte NOR</a></li>
+					<li><a href="les_portes_logiques.html#xnor">La porte XNOR</a></li>
+				</ul>
+		</li>
+		
+		<li>
+			<a href="outil_simulation.html" >Simulation d'une porte logique</a>
+		</li>
+	</ul>
+
+	<!-- Titre de la page -->
+	<h1>Les portes logiques</h1>
+	<h1> - Présentation - </h1>
+
+	<!-- Titre de la 1ère section de la page -->
+	<h2>Définition</h2>
+	<p>
+	Une <strong>porte logique</strong> est un composant élémentaire d'un circuit numérique.
+	La majorité des portes logiques disposent de deux entrées (sauf la porte NOT qui n'en comporte qu'une seule) et d'une sortie.
+	A tout moment, chaque borne d'entrée affiche un des deux états binaires : '0' (bas) ou '1' (haut). <br>
+	<br>
+	Il existe sept portes logiques de base : AND, OR, XOR, NOT, NAND, NOR et XNOR. <br>
+	</p>
+	<!-- Insertion d'une barre horizontale de séparation visuelle -->
+	<hr>
+
+	<!-- Titre de la 2ème section de la page -->
+	<h2 id="and">La porte logique AND</h2>
+	<p>
+	Cette porte logique, <i>appellée <b>ET</b> en Français</i>, renvoie un '1' en sortie <b>si</b> les deux bits donnés en entrée ont une valeur de '1'. <br>
+	Si l'un des bits ou les deux ont pour valeur '0', la porte logique <strong>AND</strong> renverra en sortie '0'.
+	<br> <br>
+	Symboles et table de vérité de cette porte logique : <br>
+	</p>
+	<img class="porte" src="img/and.png" >
+	<br><i>© Codeur pro</i>
+	
+	<!-- Insertion d'une barre horizontale de séparation visuelle -->
+	<hr>
+
+	<!-- Titre de la 3ème section de la page -->
+	<h2 id="or">La porte logique OR</h2>
+	<p>
+	Cette porte logique, <i>appellée <b>OU</b> en Français</i>, renvoie un '1' en sortie <b>si</b> au moins un des deux bits d'entrée a pour valeur '1'. <br> 
+	Si les deux bits d'entrée ont pour valeur '0', la porte logique <strong>OR</strong> renverra en sortie '0'.
+	<br> <br>
+	Symboles et table de vérité de cette porte logique : <br>
+	</p>
+	<img class="porte" src="img/or.png" >
+	<br><i>© Codeur pro</i>
+	
+	<!-- Insertion d'une barre horizontale de séparation visuelle -->
+	<hr>
+
+	<!-- Titre de la 4ème section de la page -->
+	<h2 id="xor">La porte logique XOR</h2>
+	<p>
+	Cette porte logique, <i>appellée <b>OU EXCLUSIF</b> en Français</i>, renvoie en sortie '1' <b>si</b> un des deux bits d'entrée a
+	<strong>seulement</strong> pour valeur '1'. C'est-à-dire que si les deux entrées ont pour valeur '1', la sortie a
+	pour valeur '0'. <br>
+	La porte logique <strong>XOR</strong> est donc comme la porte OR, <i><b>sauf dans le cas où</b></i> les deux bits d'entrée ont pour valeur '1'.
+	<br> <br>
+	Symboles et table de vérité de cette porte logique : <br>
+	</p>
+	<img class="porte" src="img/xor.png" >
+	<br><i>© Codeur pro</i>
+
+	<!-- Insertion d'une barre horizontale de séparation visuelle -->
+	<hr>
+	
+	<!-- Titre de la 5ème section de la page -->
+	<h2 id="not">La porte logique NOT</h2>
+	<p>
+	Cette porte logique, <i>appellée <b>NON</b> en Français</i>, ne comporte qu'une seule entrée dont elle inverse la valeur. <br>
+	Ainsi, avec la porte logique <strong>NOT</strong>, une entrée de valeur '1' donne une sortie à '0' et inversement, une entrée de valeur '0' donne une sortie à '1'.
+	<br> <br>
+	Symboles et table de vérité de cette porte logique : <br>
+	</p>
+	<img class="porte" src="img/not.png">
+	<br><i>© Codeur pro</i>
+
+	<!-- Insertion d'une barre horizontale de séparation visuelle -->
+	<hr>
+	
+	<!-- Titre de la 6ème section de la page -->
+	<h2 id="nand">La porte logique NAND</h2>
+	<p>
+	Cette porte logique, <i>appellée <b>NON ET</b> en Français</i>, correspond à une porte AND 
+	suivie par une porte NOT. La sortie est donc l'inverse de la porte AND.
+	<br> <br>
+	Symboles et table de vérité de cette porte logique : <br>
+	</p>
+	<img class="porte" src="img/nand.png" >
+	<br><i>© Codeur pro</i>
+
+	<!-- Insertion d'une barre horizontale de séparation visuelle -->
+	<hr>
+	
+	<!-- Titre de la 7ème section de la page -->
+	<h2 id="nor">La porte logique NOR </h2>
+	<p>
+	Cette porte logique, <i>appellée <b>NON OU</b> en Français</i>, utilise le même principe que la porte NAND. Elle correspond à une porte OR 
+	suivie par une porte NOT. La sortie est donc l'inverse de la porte OR.
+	<br> <br>
+	Symboles et table de vérité de cette porte logique : <br>
+	</p>
+	<img class="porte" src="img/nor.png" >
+	<br><i>© Codeur pro</i>
+
+	<!-- Insertion d'une barre horizontale de séparation visuelle -->
+	<hr>
+	
+	<!-- Titre de la 8ème section de la page -->
+	<h2 id="xnor">La porte logique XNOR </h2>
+	<p>
+	Cette porte logique, <i>appellée <b>NON OU EXCLUSIF</b> en Français</i>, utilise le même principe que les portes NAND et NOR vues précédemment.
+	Elle correspond à une porte NOR	suivie par une porte NOT. La sortie est donc l'inverse de la porte XOR. <br>
+	<br> <br>
+	Symboles et table de vérité de cette porte logique <i>en cours de création</i> <br>
+	</p>
+
+	<!-- Insertion d'une barre horizontale de séparation visuelle -->
+	<hr>
+		
+	<!-- Titre de la 9ème section de la page - bas de page avec des liens vers des sites et vidéo externes -->
+	<h2>Plus d'informations sur les portes logiques :</h2>
+	<p>
+	<ul>
+		<li> Consultez le site du <a href="https://codeur-pro.fr/les-portes-et-fonctions-logiques/">Codeur pro</a> </li>
+		<li> OU regardez la vidéo ci-dessous : <br> </li>
+	</ul>
+	<iframe width="450" height="300" src="https://www.youtube.com/embed/iTH39L2d7bg" title="Les portes logiques [Bases Informatique]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>

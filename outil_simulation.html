@@ -1,0 +1,124 @@
+<!-- Fichier de type HTML -->
+<!DOCTYPE html>
+
+<!-- Balise obligatoire en début de fichier HTML - précision de la langue utilisée FRANCAIS -->
+<html lang="fr">
+
+<!-- Lien avec le fichier javascript qui va gérer la partie dynamique (bouton et affichage du résultat) du formulaire -->
+<script src="script.js"> </script>
+
+<!-- En tête du fichier -->
+<head>
+	<!-- Titre noté dans l'onglet du navigateur -->
+	<title>Simulation porte logique</title>
+	<!-- Lien avec le fichier css de mise en forme choisi -->
+	<link href="forme.css" rel="stylesheet"></link>
+</head>
+
+<!-- Corps de la page - Contenu visible dans la page -->
+<body>
+<!-- Mise en place du menu de navigation du site - Accès aux différentes pages avec parfois des menus déroulants -->
+	<ul id="menu">
+		<li>
+			<a href="page_d'accueil.html" >Accueil</a>	
+		</li>
+		
+		<li>
+			<a href="les_femmes_et_l_informatique.html">Les grandes femmes dans l'informatique</a>
+				<ul class="sous">
+					<li><a href="les_femmes_et_l_informatique.html#ada_lovelace">Ada Lovelace</a></li>
+					<li><a href="les_femmes_et_l_informatique.html#grace_hopper">Grace Hopper</a></li>
+					<li><a href="les_femmes_et_l_informatique.html#hedy_lamarr">Hedy Lamarr</a></li>
+					<li><a href="les_femmes_et_l_informatique.html#alice_recoque">Alice Recoque</a></li>
+					<li><a href="les_femmes_et_l_informatique.html#roberta_williams">Roberta Williams</a></li>
+				</ul>
+		</li>
+		
+		<li>
+			<a href="les_portes_logiques.html" >Les portes logiques</a>
+				<ul class="sous">
+					<li><a href="les_portes_logiques.html#and">La porte AND</a></li>
+					<li><a href="les_portes_logiques.html#or">La porte OR</a></li>
+					<li><a href="les_portes_logiques.html#xor">La porte XOR</a></li>
+					<li><a href="les_portes_logiques.html#not">La porte NOT</a></li>
+					<li><a href="les_portes_logiques.html#nand">La porte NAND</a></li>
+					<li><a href="les_portes_logiques.html#nor">La porte NOR</a></li>
+					<li><a href="les_portes_logiques.html#xnor">La porte XNOR</a></li>
+				</ul>
+		</li>
+		
+		<li>
+			<a href="outil_simulation.html" >Simulation d'une porte logique</a>
+		</li>
+	</ul>
+
+	<!-- Titre de la page -->
+	<h1>Les portes logiques</h1>
+	<h1> - Simulation - </h1>
+
+	<!-- Titre de la 1ère section de la page -->
+	<h2>Outil de calcul et de simulation</h2>
+	<p > Cet outil permet de sélectionner une porte logique, la valeur de ses entrées et affiche le résultat obtenu. <br>
+	La porte logique 'NOT' ne nécessitant qu'une seule entrée, ne sera pas traitée ici. </p >
+
+
+	<!-- Définition de la zone de formulaire -->
+	<form name="formulaire">
+		<p> <strong> Choisissez une porte logique : </strong> </p>
+		<label for="porte">Type de porte : </label>
+		<select name ="select" id="porte">
+		<option value="and">AND</option>
+		<option value="or">OR</option>
+		<option value="xor">XOR</option>
+		<option value="nand">NAND</option>
+		<option value="nor">NOR</option>
+		<option value="xnor">XNOR</option>
+		</select>
+		<br>
+		<br>
+		<p> <strong> Choisissez les valeurs en entrée de la porte logique : </strong> </p>
+		<label for="binaire_1">Premier nombre binaire : </label>
+		<input type="number" name="nombre1" id="binaire_1" min = "0" max = "1" step = "1" value=""/>
+		<br>
+		<label for = "binaire_2" >Deuxième nombre binaire : </label>
+		<input type="number" name="nombre2" id="binaire_2" min="0" max="1" step = "1" value=""/>
+		<br>
+		<br>
+		<input type="button" id="bt_calcul" value="Calculer" onclick="calcul()"/>
+		<input type="button" id="bt_init" value="Réinitialiser" onclick="init()"/>
+		<br>
+		<br>
+		<table>
+			<tr>
+				<td></td>
+				<td id="bin1"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td> <img id="photo_porte" src="./img/vide.jpg" width="100px"></td>
+				<td></td>
+				<td id="resultat"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td id="bin2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	
+	</form>
+
+
+<!-- Insertion d'une barre horizontale de séparation visuelle -->
+<hr>
+
+</body>
