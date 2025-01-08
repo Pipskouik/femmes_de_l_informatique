@@ -32,7 +32,7 @@ function init()
 	document.getElementById("bin1").innerHTML="";
 	document.getElementById("bin2").innerHTML="";
 	document.getElementById("resultat").innerHTML=""
-	document.getElementById("photo_porte").src = "./img/vide.jpg"
+	document.getElementById("photo_porte").src = "../img/vide.jpg"
 }
 
 // Fonction appelée lors du choix de la porte logique AND
@@ -61,7 +61,7 @@ function calculAND()
 	document.getElementById("resultat").innerHTML=resultat;
 	document.getElementById("bin1").innerHTML=binaire_1.value;
 	document.getElementById("bin2").innerHTML=binaire_2.value;
-	document.getElementById("photo_porte").src = "./img/porte_AND.png"
+	document.getElementById("photo_porte").src = "../img/porte_AND.png"
 	
 }
 
@@ -91,7 +91,7 @@ function calculOR()
 	document.getElementById("resultat").innerHTML=resultat;
 	document.getElementById("bin1").innerHTML=binaire_1.value;
 	document.getElementById("bin2").innerHTML=binaire_2.value;
-	document.getElementById("photo_porte").src = "./img/porte_OR.gif"
+	document.getElementById("photo_porte").src = "../img/porte_OR.gif"
 }
 
 // Fonction appelée lors du choix de la porte logique XOR
@@ -120,7 +120,7 @@ function calculXOR()
 	document.getElementById("resultat").innerHTML=resultat;
 	document.getElementById("bin1").innerHTML=binaire_1.value;
 	document.getElementById("bin2").innerHTML=binaire_2.value;
-	document.getElementById("photo_porte").src = "./img/porte_XOR.gif"
+	document.getElementById("photo_porte").src = "../img/porte_XOR.gif"
 	
 }
 
@@ -150,7 +150,7 @@ function calculNAND()
 	document.getElementById("resultat").innerHTML=resultat;
 	document.getElementById("bin1").innerHTML=binaire_1.value;
 	document.getElementById("bin2").innerHTML=binaire_2.value;
-	document.getElementById("photo_porte").src = "./img/porte_NAND.png"
+	document.getElementById("photo_porte").src = "../img/porte_NAND.png"
 }
 
 // Fonction appelée lors du choix de la porte logique NOR
@@ -178,7 +178,7 @@ function calculNOR()
 	document.getElementById("resultat").innerHTML=resultat;
 	document.getElementById("bin1").innerHTML=binaire_1.value;
 	document.getElementById("bin2").innerHTML=binaire_2.value;
-	document.getElementById("photo_porte").src = "./img/porte_NOR.gif"
+	document.getElementById("photo_porte").src = "../img/porte_NOR.gif"
 }
 
 // Fonction appelée lors du choix de la porte logique XNOR
@@ -207,7 +207,7 @@ function calculXNOR()
 	document.getElementById("resultat").innerHTML=resultat;
 	document.getElementById("bin1").innerHTML=binaire_1.value;
 	document.getElementById("bin2").innerHTML=binaire_2.value;
-	document.getElementById("photo_porte").src = "./img/porte_XNOR.gif"
+	document.getElementById("photo_porte").src = "../img/porte_XNOR.gif"
 }
 
 
